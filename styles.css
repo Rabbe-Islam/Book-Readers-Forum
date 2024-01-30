@@ -1,0 +1,570 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+body, .body {
+    font-size: 16px;
+}
+.body {
+    margin: 30px auto 60px auto;
+    padding: 0 150px;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* Main body container */
+.body-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.body-container .left-body {
+    width: 25%;
+}
+.body-container .right-body {
+    width: 75%;
+}
+.login-container {
+    display: flex;
+    justify-content: space-around;
+}
+.login-left {
+    width: 50%;
+}
+.login-left img {
+    width: 320px;
+    height: auto;
+}
+.login-right {
+    width: 50%;
+}
+
+.pg-header1 {
+    background-color: #f8f9f0;
+    color:#222222;
+    padding: 20px 150px;
+}
+.pg-header1 .title {
+    font-size: 25px;
+    color:rgb(34, 34, 34);
+    font-weight: bold;
+}
+.pg-header1 a {
+    color:rgb(34, 34, 34);
+    font-weight: bold;
+}
+.pg-header2 {
+    color:rgb(34, 34, 34);
+    padding: 25px 20px;
+}
+.pg-header2 .title {
+    font-size: 25px;
+    color:rgb(34, 34, 34);
+    font-weight: bold;
+}
+.pg-header2 a {
+    color:rgb(34, 34, 34);
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.container-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-even {
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.header-nav-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navlink-container a {
+    color: #ff8800;
+}
+.navlink-container a:hover {
+    color: #090909;
+}
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.search-input {
+    border: none;
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 150px;
+    padding: 12px;
+    box-sizing: border-box;
+    width: 90%;
+}
+.search-input:focus {
+    outline: 1px solid #ff8800;
+}
+.search-button {
+    color: #6a6a6a;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin-left: -40px;
+    background-color: transparent;
+}
+
+
+.author-sm-card {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 8px;
+    margin-top: 8px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+.author-sm-card img {
+    border: 1px solid #d8d8d8;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+
+.nav-btn {
+    display: inline-block;
+    padding: 6px;
+    margin: 2px 5px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+.nav-btn:hover {
+    margin-bottom: 0;
+    margin: -5px 5px 7px 5px;
+    border-bottom: 2px solid #ff8800;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.nav-btn img {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+
+
+/* Login Page CSS */
+.login-form {
+    padding: 5px 15px;
+    margin: 20px auto;
+    width: 400px;
+}
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+    box-sizing: border-box;
+}
+.login-form input[type="submit"] {
+	padding: 10px;
+	background-color: #ff8800;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.login-form input[type="submit"]:hover {
+	background-color: #ce6e00;
+}
+
+
+
+
+
+/* Registration Page CSS*/
+.reg-form {
+    margin: 30px;
+}
+.registration-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+}
+.registration-form h2 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus
+.form-group input[type="number"]:focus,
+.form-group select:focus {
+    border: 1px solid #ffba6b;
+    outline: none;
+}
+.submit-button {
+    width: 100%;
+	padding: 10px;
+	background-color: #ff8800;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.submit-button:hover {
+	background-color: #ce6e00;
+}
+
+
+
+.addx-form {
+    width: 80%;
+    margin: 0 auto;
+}
+.addx-form textarea {
+    width: 97%;
+    height: 120px;
+    margin: 5px 0;
+    padding: 8px;
+}
+.addx-form textarea:focus {
+    border: 1px solid #ffba6b;
+    outline: none;
+}
+
+
+
+.aligncenter {
+    text-align: center;
+}
+.alignright {
+    text-align: right;
+}
+.heading {
+    margin: 8px 0 5px 0;
+}
+.center-heading {
+    text-align: center;
+}
+.center-heading span,
+.heading span {
+    border-bottom: 1px solid #ff7b00;
+}
+.notify-red {
+    margin: 20px 0;
+    background-color: #ffe8e0;
+    color: #c10000;
+    padding: 15px;
+    text-align: center;
+    border:#cd0000;
+}
+.notify-green {
+    margin: 20px 0;
+    background-color: #eeffec;
+    color: #105100;
+    padding: 15px;
+    text-align: center;
+    border:#1f9a00;
+}
+
+
+
+
+
+
+/* List code Category and Authors */
+.category-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cat-card {
+    background-color: #9b7a03;
+    color: #fff;
+    padding: 20px 30px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.cat-card:hover {
+    background-color: #fff;
+    color: #9b7a03;
+    border: 2px solid #ff7b00;
+    padding: 18px 28px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.author-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.author-card {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #e6e6e6;
+    padding: 20px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    width: 500px;
+}
+.author-card img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+.author-card:hover {
+    background-color: #fff;
+    color: #9b7a03;
+    border: 2px solid #ff7b00;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Main book list container */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+.book-list a {
+    color: #000000;
+}
+.book-card {
+    width: 140px;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+.book-card:hover {
+    margin-top: -10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.book-card img {
+    width: 130px;
+    height: auto;
+}
+.book-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.book-card p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888;
+}
+.ratings {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #f39c12;
+}
+
+
+/* Book Details Page CSS */
+.book-i-cover {
+    background-color: #fff4ee;
+    color: #101010;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+}
+.book-i-img {
+    text-align: center;
+}
+.book-i-img img {
+    width: 180px;
+    height: auto;
+    border: 2px solid #fff;
+}
+.book-i-rating {
+    color: #421500;
+}
+.book-i-name,
+.book-i-author,
+.book-i-genre,
+.book-i-publish,
+.book-i-postedby {
+    margin: 5px 0;
+}
+.book-i-synopsis {
+    display: block;
+    background-color: #e7e6f3;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Book Review Section CSS */
+.review-box {
+    margin: 20px 0 30px 0;
+}
+.review-box-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.review-box textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #d1d1d1;
+}
+.review-box textarea:focus {
+    border: 1px solid #ff8800;
+}
+.review-box input[type="submit"] {
+    height: 50px;
+	padding: 10px;
+	background-color: #ff8800;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.review-box input[type="submit"]:hover {
+	background-color: #ce6e00;
+}
+.cmnt-body {
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+}
+.cmnt-auth {
+    margin: 0 10px;
+}
+.cmnt-auth img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #dcdcdc;
+    border-radius: 50%;
+}
+.cmnt-block {
+    background-color: #fffef0;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.cmnt-auth-name {
+    margin-bottom: 5px;
+}
+.cmnt-text {
+    display: block;
+    margin: 20px 0;
+    color: #000;
+}
+
+
+
+
+.admin-panel-blk {
+    margin: 0;
+}
+.panel-heading {
+    background-color: #f0f0f0;
+    color: #212121;
+    padding: 12px;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+.pg-footer {
+    background-color: #f8f9f0;
+    padding: 20px 15px;
+    color: #222222;
+}
+.pg-footer .title {
+    font-size: 23px;
+    color: #222222;
+    font-weight: bold;
+    margin: 10px;
+}
+.pg-footer .overview {
+    color: #787878;
+    width: 400px;
+    text-align: center;
+}
+.social-icons {
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    color: #ff5100;
+}
+.social-icons i {
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.social-icons i:hover {
+    color: #222222;
+    border: 1px solid #222;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.footer-copyright {
+    background-color: #d4d5cd;
+    color: #000;
+    padding: 12px;
+    text-align: center;
+}
